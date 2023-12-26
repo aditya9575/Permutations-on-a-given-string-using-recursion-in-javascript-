@@ -49,4 +49,25 @@ var permute = function(nums) {
 let result = permute([1, 2, 3]);
 console.log(result);
 
+Approach:
 
+The permute function uses a recursive approach to find all permutations of a given array (nums). The solve function is the recursive helper that swaps elements to generate permutations. Here's a step-by-step breakdown of the approach:
+
+Base Case:
+
+If the current index (index) is greater than or equal to the length of the array, push a clone of the array to the result array (ans). This is the base case that stops the recursion.
+Iteration:
+
+Iterate through the array starting from the current index (j = index).
+Swap the elements at the current index and j using destructuring assignment.
+Recursion:
+
+Recursively call the solve function for the next index (index + 1).
+Backtrack:
+
+Undo the swap to backtrack and explore other possibilities.
+Initialization and Return:
+
+Initialize an empty array (ans) and the starting index (index = 0).
+Call the solve function with the initial parameters.
+Return the array containing all permutations (ans).
