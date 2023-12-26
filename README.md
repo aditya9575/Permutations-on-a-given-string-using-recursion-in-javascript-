@@ -61,7 +61,7 @@ Iteration:
 Iterate through the array starting from the current index (j = index).
 Swap the elements at the current index and j using destructuring assignment.
 Recursion:
-
+ 
 Recursively call the solve function for the next index (index + 1).
 Backtrack:
 
